@@ -8,7 +8,7 @@ import {environment} from 'src/environments/environment';
 })
 export class HeaderComponent implements OnInit {
   imageUrl: string;
-
+  menu = true;
   constructor() { }
 
   ngOnInit() {
