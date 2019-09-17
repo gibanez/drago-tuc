@@ -1,20 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Hello Adonis</title>
-  {{ style('style') }}
+  <meta charset="utf-8"/>
+  <title>Drago Tucumán</title>
+  <base href="/"/>
+  {{ style('site/styles.css') }}
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
 </head>
 <body>
-  <section>
-    <div class="logo"></div>
-    <div class="title"></div>
-    <div class="subtitle">
-      <p>AdonisJs simplicity will make you feel confident about your code</p>
-      <p>
-        Don't know where to start? Read the <a href="https://adonisjs.com/docs">documentation</a>.
-      </p>
-    </div>
-  </section>
+<app-root></app-root>
+{{ script("/site/runtime.js") }}
+{{ script("/site/polyfills.js") }}
+{{ script("/site/vendor.js") }}
+{{ script("/site/main.js") }}
 </body>
 </html>
+
