@@ -5,7 +5,7 @@
   "description": "The fullstack application boilerplate for Adonisjs",
   "main": "index.js",
   "scripts": {
-    "start": "ENV_SILENT=true node ace migration:run",
+    "start": "ENV_SILENT=true node ace migration:run --force",
     "test": "node ace test"
   },
   "engines": {
