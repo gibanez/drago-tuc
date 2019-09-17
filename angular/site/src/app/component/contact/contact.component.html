@@ -1,0 +1,67 @@
+<div class="container">
+  <section class="main-section contact" id="contact">
+
+    <div class="row">
+      <div class="col-lg-6 col-sm-7 animated fadeInLeft">
+        <div class="contact-info-box address clearfix">
+          <h3><i class=" icon-map-marker"></i>Direccion:</h3>
+          <span>Av. Brigido B. Teran 481<br>San Miguel de Tucumán, Tucumán, 4000.</span>
+        </div>
+        <div class="contact-info-box phone clearfix">
+          <h3><i class="fa-phone"></i>Telefono:</h3>
+          <span>0381 424-2591</span>
+        </div>
+        <div class="contact-info-box email clearfix">
+          <h3><i class="fa-pencil"></i>Correo electronico:</h3>
+          <span>info@drago-tucuman.com</span>
+        </div>
+        <div class="contact-info-box hours clearfix">
+          <h3><i class="fa-clock-o"></i>Horarios:</h3>
+          <span><strong>Lunes - Viernes:</strong> 9am - 20pm<br>
+            <strong>Sabado:</strong> 9am - 13pm<br>
+            <strong>Domingo y feriados:</strong> Cerrado.</span>
+        </div>
+        <ul class="social-link">
+          <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
+          <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
+          <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
+          <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
+          <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-sm-5 animated fadeInUp delay-05s">
+        <div class="form" *ngIf="!sending">
+
+          <div id="sendmessage">Envie su mensaje. Gracias!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+            <div class="form-group">
+              <input formControlName="name" type="text" name="name" class="form-control input-text" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input formControlName="email" class="form-control input-text" placeholder="Tu correo electronico" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input formControlName="phone" class="form-control input-text" placeholder="Tu telefono (opcional)" />
+              <div class="validation">error</div>
+            </div>
+            <div class="form-group">
+              <textarea formControlName="message" class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Por favor ingrese su comentario" placeholder="Por favor ingrese su comentario..."></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <div class="text-center"><button [disabled]="!form.valid" type="submit" class="input-btn">Enviar mensaje</button></div>
+          </form>
+        </div>
+
+        <div *ngIf="sending" class="animated fadeInUp delay-05s">
+          <h2>Gracias</h2>
+          <h6>Su mensaje fue enviado nos pondremos en contacto con usted.</h6>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>

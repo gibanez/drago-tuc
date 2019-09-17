@@ -1,0 +1,10 @@
+.fa-search-plus {
+  color: forestgreen;
+}
+.fa-shopping-cart:hover,.fa-search-plus:hover {
+  color: #ffffff;
+}
+
+.fa-shopping-cart {
+  color: #3b5998;
+}

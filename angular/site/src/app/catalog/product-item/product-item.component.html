@@ -1,0 +1,12 @@
+<div class="team-leader-box">
+  <div class="team-leader animated fadeInDown delay-03s">
+    <div class="team-leader-shadow"><a href="#"></a></div>
+    <img src="https://localhost:3333/uploads/products/{{product.images[0].filename}}" style="width: 275px; height: 275px" alt="">
+    <ul>
+      <li><a [routerLink]="[product.id]" class="fa-search-plus"></a></li>
+      <li><a href="#" class="fa-shopping-cart"></a></li>
+    </ul>
+  </div>
+  <h3 class="animated fadeInDown delay-03s">{{product.name}}</h3>
+  <span class="animated fadeInDown delay-03s">{{product.price | currency}}</span>
+</div>

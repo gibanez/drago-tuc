@@ -1,0 +1,4 @@
+<ul class="Portfolio-nav animated fadeIn delay-02s">
+  <li><a (click)="selected(null)" class="category-link">Todos</a></li>
+  <li *ngFor="let category of categories"><a (click)="selected(category)" class="category-link">{{category.name}}</a></li>
+</ul>

@@ -1,0 +1,14 @@
+<nav class="main-nav-outer" id="test">
+  <!--main-nav-start-->
+  <div class="container">
+    <ul class="main-nav" [style.display]="menu?'block':'none'">
+      <li class="animated fadeIn delay-07s"><a routerLink="nosotros">Nosotros</a></li>
+      <li class="animated fadeIn delay-05s"><a routerLink="productos">Productos</a></li>
+      <li class="small-logo animated fadeIn delay-03s"><a routerLink="/"><img src="{{imageUrl}}assets/images/logo.png" alt="" width="95"></a></li>
+      <li class="animated fadeIn delay-05s"><a routerLink="clientes">Clientes</a></li>
+      <li class="animated fadeIn delay-07s"><a routerLink="contacto">Contacto</a></li>
+    </ul>
+    <a class="res-nav_click" href="#" (click)="menu = !menu"><i class="fa-bars"></i></a>
+  </div>
+</nav>
+

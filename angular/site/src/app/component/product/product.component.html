@@ -1,0 +1,24 @@
+
+<section class="main-section paddind" id="Portfolio">
+  <!--main-section-start-->
+  <div class="container">
+    <h2>Productos</h2>
+    <h6>Estos son los productos que ofrecemos en <b>Drago Tucumán</b>.</h6>
+    <div class="portfolioFilter">
+      <ul class="Portfolio-nav animated fadeIn delay-02s">
+
+        <li *ngFor="let category of categories"><a (click)="productsByCategory(category)">{{category.name}}</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+  <div class="portfolioContainer animated fadeInUp delay-04s">
+    <div class=" Portfolio-box photography" *ngFor="let product of products">
+      <a href="#"><img src="https://localhost:3333/uploads/products/{{product.images[0].filename}}" alt=""></a>
+      <h3>{{product.price}}</h3>
+      <p>{{product.name}}</p>
+    </div>
+  </div>
+</section>
+<!--main-section-end-->

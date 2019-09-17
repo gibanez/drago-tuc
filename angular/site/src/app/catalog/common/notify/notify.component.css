@@ -1,0 +1,7 @@
+.notify {
+  width: 300px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 25px;
+}

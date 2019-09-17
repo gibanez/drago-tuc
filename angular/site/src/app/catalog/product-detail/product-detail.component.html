@@ -1,0 +1,43 @@
+<section class="main-section alabaster" *ngIf="loading">
+  <div class="row">
+    <div class="col-lg-offset-4 col-lg-4">
+      <i class="fa-spinner fa-spin fa-5x"></i>
+    </div>
+  </div>
+</section>
+<section class="main-section alabaster" *ngIf="!loading">
+  <!--main-section alabaster-start-->
+  <div class="container">
+    <div class="row">
+      <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+        <img src="https://localhost:3333/uploads/products/{{product.images[currentImage].filename}}" alt="">
+      </figure>
+      <button (click)="prevImage()">prev</button>
+      {{currentImage + 1 }} de {{product.images.length}}
+      <button (click)="nextImage()">next</button>
+      <div class="col-lg-7 col-sm-8 featured-work">
+        <h2>{{product.name}}</h2>
+        <P class="padding-b">{{product.description}}</P>
+        <div class="featured-box">
+          <div class="featured-box-col1 wow fadeInRight delay-02s">
+            <i class="fa-dollar"></i>
+          </div>
+          <div class="featured-box-col2 wow fadeInRight delay-02s">
+            <h3>Precio</h3>
+            <p>{{product.price | currency}}</p>
+          </div>
+        </div>
+        <div class="featured-box">
+          <div class="featured-box-col1 wow fadeInRight delay-06s">
+            <i class="fa-shopping-cart"></i>
+          </div>
+          <div class="featured-box-col2 wow fadeInRight delay-06s">
+            <h3>Orden</h3>
+            <p><a (click)="addProduct(product)" class="add-order">Agregar</a></p>
+          </div>
+        </div>
+        <a class="Learn-More" href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>

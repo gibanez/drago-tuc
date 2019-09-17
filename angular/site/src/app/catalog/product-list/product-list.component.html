@@ -1,0 +1,15 @@
+
+<section class="main-section paddind" id="Portfolio" style="margin-bottom: 20px;">
+  <!--main-section-start-->
+  <div class="container">
+    <h2>Productos</h2>
+    <h6>Estos son los productos que ofrecemos en <b>Drago Tucumán</b>.</h6>
+    <div class="portfolioFilter">
+      <app-category-list (onSelected)="findByCategory($event)"></app-category-list>
+    </div>
+    <div class="team-leader-block clearfix" >
+      <app-product-item *ngFor="let product of products" [product]="product"></app-product-item>
+    </div>
+  </div>
+</section>
+<!--main-section-end-->
