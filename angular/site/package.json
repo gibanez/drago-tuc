@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "preinstall": "npm install -g @angular/cli @angular/compiler-cli @angular-devkit/build-angular typescript",
+    "preinstall": "npm install -g @angular/cli typescript",
     "postinstall": "ng build --aot --prod"
   },
   "engines": {
@@ -28,9 +28,7 @@
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26"
-  },
-  "devDependencies": {
+    "zone.js": "~0.8.26",
     "@angular-devkit/build-angular": "~0.12.0",
     "@angular/cli": "~7.2.2",
     "@angular/compiler-cli": "~7.2.0",
