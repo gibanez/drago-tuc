@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  host: 'http://localhost:4200/',
-  apiUrl: 'https://localhost:3333/api/public/'
+  host: 'https://dragotucuman.herokuapp.com/',
+  apiUrl: 'https://dragotucuman.herokuapp.com/api/public/'
 };
