@@ -11,7 +11,7 @@ import {ProductService} from 'src/app/service/product.service';
 })
 export class ProductComponent implements OnInit {
   products: any[];
-  private categories: Array<Category>;
+  public categories: Array<Category>;
   constructor(protected categoryService: CategoryService,
               protected productService: ProductService
               ) { }
