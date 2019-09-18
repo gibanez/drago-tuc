@@ -45,8 +45,8 @@ a, a:hover, a:active{ outline:0px !important}
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('assets/fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('assets/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('assets/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('assets/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('assets/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  src: url('site/assets/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('site/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('site/assets/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('assets/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('assets/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -97,7 +97,7 @@ p{
 
 .header{
   text-align:center;
-  background:url(/assets/images/pw_maze_black_2X.png) left top repeat;
+  background:url(site/assets/images/pw_maze_black_2X.png) left top repeat;
   padding:280px 0;
 }
 .logo{
@@ -283,13 +283,13 @@ p{
 }
 .featured-box-col2{ overflow:hidden;}
 .featured-box.magic{
-  background:url(/assets/images/magic.png) left top no-repeat;
+  background:url(site/assets/images/magic.png) left top no-repeat;
 }
 .featured-box.packaged{
-  background:url(/assets/images/packaged.png) left top no-repeat;
+  background:url(site/assets/images/packaged.png) left top no-repeat;
 }
 .featured-box.seo{
-  background:url(/assets/images/seo.png) left top no-repeat;
+  background:url(site/assets/images/seo.png) left top no-repeat;
 }
 .Learn-More{
   display:inline-block;
@@ -404,7 +404,7 @@ img {
 /* Clients
 ---------------------------------*/
 .client-part{
-  background:url(assets/images/section-bg1.jpg) center center no-repeat;
+  background:url(site/assets/images/section-bg1.jpg) center center no-repeat;
   background-size:cover;
   padding:55px 0;
   text-align:center;
@@ -594,7 +594,7 @@ img {
 /* Talk Business
 ---------------------------------*/
 .business-talking{
-  background:url(assets/images/section-bg2.jpg) top center no-repeat;
+  background:url(site/assets/images/section-bg2.jpg) top center no-repeat;
   background-size:cover;
   padding:60px 0 10px;
   text-align:center;
@@ -617,7 +617,7 @@ img {
 }
 
 .main-section.contact{
-  background:url(assets/images/bg-map.png) left 190px no-repeat;
+  background:url(site/assets/images/bg-map.png) left 190px no-repeat;
 }
 .contact-info-box{
   font-size:15px;
@@ -775,7 +775,7 @@ img {
 ---------------------------------*/
 
 .footer{
-  background:url(assets/images/pw_maze_black_2X.png) left top repeat;
+  background:url(site/assets/images/pw_maze_black_2X.png) left top repeat;
   padding:35px 0 35px;
 }
 .footer-logo{
