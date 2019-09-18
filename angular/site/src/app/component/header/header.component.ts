@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.imageUrl = environment.host
+    this.imageUrl = environment.host + '/site'
   }
 
 }
